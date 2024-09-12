@@ -6,7 +6,7 @@ const model = defineModel({ type: String, required: true });
 </script>
 
 <template>
-  <!--The FloatLabel is bugged. Comment it out and see everything working as expected-->
+  <div>Comment out this div in src/components/BaseInput.vue and see the bug disappear in dev (but not in prod)</div>
   <FloatLabel class="label-combo">
     <InputText v-model="model" id="input" type="text" />
     <label for="input">This is a label</label>
